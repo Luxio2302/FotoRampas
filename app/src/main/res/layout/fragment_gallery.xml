@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:text="Destino"
+        android:textStyle="bold"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvdest"
+        android:layout_width="76dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="56dp"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lista_fotos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/style_borde_edittext"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fotografiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:contentDescription="TODO"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:srcCompat="@drawable/ic_menu_camera"
+        tools:ignore="ImageContrastCheck,MissingClass" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Numero de caja"
+        android:textStyle="bold"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="10dp"
+        android:text="Tipo de Embarque"
+        android:textStyle="bold"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvemb"
+        android:layout_width="76dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="8dp"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/num_img"
+        android:layout_width="76dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="48dp"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="8dp"
+        android:text="Id_emb"
+        android:textStyle="bold"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvtrailer"
+        android:layout_width="87dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvtipo"
+        android:layout_width="76dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="30dp"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:enabled="true"
+        android:src="@drawable/ic_baseline_add_24"
+        android:text="Añadir"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/lista_fotos" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
